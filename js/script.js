@@ -2,6 +2,7 @@ const app = new Vue({
   el: "#app",
   data: {
     activeElement: 0,
+    scroll: null,
     items: [
       {
         title: "Svezia",
@@ -44,6 +45,16 @@ const app = new Vue({
 
     changeImg(index) {
       this.activeElement = index;
+    },
+
+    autoScroll() {
+      this.scroll = setInterval(this.next, 1000);
+    },
+
+    clearAutoScroll() {
+      console.log(this.scroll);
+      clearInterval(this.scroll);
+      this.scroll = null;
     },
   },
 });

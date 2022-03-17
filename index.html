@@ -74,7 +74,12 @@
             </div>
           </div>
 
-          <!-- <div class="col-12 p-3" id="my-after-carousel"></div> -->
+          <div class="col-12 p-3" id="my-after-carousel">
+            <button class="btn btn-primary" @click="autoScroll">Start</button>
+            <button class="btn btn-warning" @click="clearAutoScroll">
+              Stop
+            </button>
+          </div>
         </div>
       </div>
     </main>
