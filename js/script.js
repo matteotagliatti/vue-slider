@@ -41,5 +41,9 @@ const app = new Vue({
       this.activeElement--;
       if (this.activeElement === -1) this.activeElement = 4;
     },
+
+    changeImg(index) {
+      this.activeElement = index;
+    },
   },
 });
