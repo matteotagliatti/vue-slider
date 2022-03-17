@@ -52,7 +52,6 @@ const app = new Vue({
     },
 
     clearAutoScroll() {
-      console.log(this.scroll);
       clearInterval(this.scroll);
       this.scroll = null;
     },
